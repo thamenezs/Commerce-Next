@@ -2,13 +2,8 @@ import Image from "next/image";
 import { useState } from "react";
 import { MagnifyingGlassIcon } from "@heroicons/react/24/outline";
 import Link from "next/link";
-import { useRouter } from "next/router";
 
 export default function Navbar() {
-  const router = useRouter();
-  const isActive = (path: string): string => {
-    return router.pathname == path ? "font-bold underline" : "";
-  };
 
   return (
     <nav className="fixed top-0 left-0 right-0 z-10">
@@ -29,25 +24,19 @@ export default function Navbar() {
         <div className="flex flex-row gap-5">
           <Link
             href={"/"}
-            className={`inline-block hover:underline underline-offset-8 decoration-2 decoration-sky-500 ${isActive(
-              "/"
-            )}`}
+            className="inline-block hover:underline underline-offset-8 decoration-2 decoration-sky-500"
           >
             Home
           </Link>
           <Link
             href={"#about"}
-            className={`inline-block hover:underline underline-offset-8 decoration-2 decoration-sky-500 ${isActive(
-              "#about"
-            )}`}
+            className="inline-block hover:underline underline-offset-8 decoration-2 decoration-sky-500"
           >
             About
           </Link>
           <Link
             href={"#products"}
-            className={`inline-block hover:underline underline-offset-8 decoration-2 decoration-sky-500 ${isActive(
-              "#products"
-            )}`}
+            className="inline-block hover:underline underline-offset-8 decoration-2 decoration-sky-500"
           >
             Products
           </Link>
