@@ -1,11 +1,10 @@
 import { Swiper, SwiperSlide } from "swiper/react";
 import Image from "next/image";
-import { EffectFade, Navigation, Pagination } from "swiper/modules";
+import { Autoplay, EffectFade, Navigation, Pagination } from "swiper/modules";
 
 import "swiper/css";
 import "swiper/css/navigation";
 import "swiper/css/pagination";
-import "swiper/css/scrollbar";
 
 export default function Carousel() {
   const data = [
@@ -16,12 +15,12 @@ export default function Carousel() {
     {
       id: "2",
       image:
-        "https://images.pexels.com/photos/7006367/pexels-photo-7006367.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+        "https://images.pexels.com/photos/406014/pexels-photo-406014.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
     },
     {
       id: "3",
       image:
-        "https://images.pexels.com/photos/7006368/pexels-photo-7006368.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+        "https://images.pexels.com/photos/2039606/pexels-photo-2039606.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
     },
   ];
   return (
@@ -30,18 +29,17 @@ export default function Carousel() {
         <Swiper
           slidesPerView={1}
           pagination={{
-            clickable: true,
-            bulletActiveClass: "swiper-pagination-bullet-active",
             bulletClass: "swiper-pagination-bullet",
+            bulletActiveClass: "swiper-pagination-bullet-active",
           }}
           navigation={{
             nextEl: ".swiper-button-next",
             prevEl: ".swiper-button-prev",
           }}
-          modules={[EffectFade, Pagination, Navigation]}
+          modules={[EffectFade, Pagination, Navigation, Autoplay]}
           effect="fade"
           className="sm:h-[calc(100vh-88px)] h-[calc(50vh-88px)] w-full"
-          autoplay={true}
+          autoplay={{ delay: 1000}}
         >
           {data.map((item) => (
             <SwiperSlide key={item.id}>

@@ -1,5 +1,4 @@
 import Carousel from "./Carousel";
-import Infos from "./Infos";
 
 export default function AboutSection() {
   return (

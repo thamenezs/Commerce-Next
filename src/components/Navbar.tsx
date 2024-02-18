@@ -5,6 +5,8 @@ import Link from "next/link";
 
 export default function Navbar() {
 
+  const [ openMenu, setOpenMenu ] = useState(false);
+
   return (
     <nav className="fixed top-0 left-0 right-0 z-10">
       <div className="flex justify-between items-center w-full h-20 text-black py-11 px-16 bg-white">
