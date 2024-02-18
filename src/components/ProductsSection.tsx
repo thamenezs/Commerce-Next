@@ -1,7 +1,31 @@
+import ProductsSectionData from "./ProductsSectionImages";
 import ProductsSectionImages from "./ProductsSectionImages";
 import Image from "next/image";
 
+
 export default function ProductsSection() {
+  const productData = [
+    {
+      imageSrc: "/hero.png",
+      title: "Eyelash extension",
+      subtitle: "Safe and comfortable eyelashes by using exclusive Japanese products and best application technique",
+    },
+    {
+      imageSrc: "/hero.png",
+      title: "Tatoo Removal",
+      subtitle: "Safe and comfortable eyelashes by using exclusive Japanese products and best application technique",
+    },
+    {
+      imageSrc: "/hero.png",
+      title: "Get Nail Art",
+      subtitle: "Safe and comfortable eyelashes by using exclusive Japanese products and best application technique",
+    },
+    {
+      imageSrc: "/hero.png",
+      title: "Permanent Makeup",
+      subtitle: "Safe and comfortable eyelashes by using exclusive Japanese products and best application technique",
+    },
+  ];
   return (
     <section id="products">
       <div className="grid sm:grid-cols-2 grid-cols-1 place-items-stretch h-screen sm:h-full p-16">
@@ -25,35 +49,8 @@ export default function ProductsSection() {
             has grown to date opening 4 services as follows
           </h2>
         </div>
-        <div className="grid grid-cols-2 gap-2">
-          <ProductsSectionImages
-            imageSrc={"/hero.png"}
-            title={"Eyelash extension"}
-            subtitle={
-              "Safe and comfortable eyelashes by using exclusive Japanese products and best application technique"
-            }
-          />
-          <ProductsSectionImages
-            imageSrc={"/hero.png"}
-            title={"Eyelash extension"}
-            subtitle={
-              "Safe and comfortable eyelashes by using exclusive Japanese products and best application technique"
-            }
-          />
-          <ProductsSectionImages
-            imageSrc={"/hero.png"}
-            title={"Eyelash extension"}
-            subtitle={
-              "Safe and comfortable eyelashes by using exclusive Japanese products and best application technique"
-            }
-          />
-          <ProductsSectionImages
-            imageSrc={"/hero.png"}
-            title={"Eyelash extension"}
-            subtitle={
-              "Safe and comfortable eyelashes by using exclusive Japanese products and best application technique"
-            }
-          />
+        <div className="">
+          <ProductsSectionData products={productData}/>
         </div>
       </div>
     </section>

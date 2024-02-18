@@ -37,4 +37,24 @@ const ProductsSectionImages: React.FC<ProductsSectionImagesProps> = ({
   );
 };
 
-export default ProductsSectionImages;
+interface ProductsSectionProps {
+  products: ProductsSectionImagesProps[];
+}
+
+const ProductsSectionData: React.FC<ProductsSectionProps> = ({ products }) => {
+  return (
+    <section className="container">
+      <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+        {products.map((product) => (
+          <ProductsSectionImages
+            key={product.title}
+            imageSrc={product.imageSrc}
+            title={product.title}
+            subtitle={product.subtitle}
+          />
+        ))}
+      </div>
+    </section>
+  );
+};
+export default ProductsSectionData;

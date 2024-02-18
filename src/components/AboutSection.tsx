@@ -14,7 +14,7 @@ export default function AboutSection() {
                 #Treatment
               </p>
               <div className="flex flex-row">
-                <h1 className="tracking-wide text-6xl font-bold text-black">
+                <h1 className="tracking-wide text-4xl sm:text-6xl font-bold text-black">
                   Make You Even More The Best
                 </h1>
               </div>
