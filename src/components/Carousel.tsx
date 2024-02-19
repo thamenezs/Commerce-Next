@@ -43,12 +43,12 @@ export default function Carousel() {
         >
           {data.map((item) => (
             <SwiperSlide key={item.id}>
-              <div className="flex h-full w-full items-center justify-center">
+              <div className="flex h-full w-full items-center justify-center static">
                 <Image
-                  className=""
                   src={item.image}
                   alt={"photos"}
                   fill={true}
+                  quality={100}
                 />
               </div>
             </SwiperSlide>

@@ -26,21 +26,27 @@ export default function Navbar() {
         <div className="flex flex-row gap-5">
           <Link
             href={"/"}
-            className="inline-block hover:underline underline-offset-8 decoration-2 decoration-sky-500"
+            className="inline-block hover:underline underline-offset-8 decoration-2 decoration-sky-500 scroll-smooth"
           >
             Home
-          </Link>
-          <Link
-            href={"#about"}
-            className="inline-block hover:underline underline-offset-8 decoration-2 decoration-sky-500"
-          >
-            About
           </Link>
           <Link
             href={"#products"}
             className="inline-block hover:underline underline-offset-8 decoration-2 decoration-sky-500"
           >
             Products
+          </Link>
+          <Link
+            href={"#friends"}
+            className="inline-block hover:underline underline-offset-8 decoration-2 decoration-sky-500"
+          >
+            Clientes
+          </Link>
+          <Link
+            href={"#contact"}
+            className="inline-block hover:underline underline-offset-8 decoration-2 decoration-sky-500"
+          >
+            Contate-nos
           </Link>
         </div>
       </div>
