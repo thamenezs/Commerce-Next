@@ -3,13 +3,12 @@ import Carousel from "./Carousel";
 export default function AboutSection() {
   return (
     <section id="about">
-      <div className=" bg-white">
         <div className="grid sm:grid-cols-2 grid-cols-1 place-items-stretch h-screen sm:h-full">
           <div className="bg-white">
             <Carousel />
           </div>
           <div className="bg-white relative">
-            <div className="flex flex-col items-start gap-6 absolute bottom-8 left-10 right-6">
+            <div className="flex flex-col items-start gap-6 absolute bottom-32 sm:bottom-8 left-10 right-6">
               <p className="tracking-widest text-xl font-montserrat-light text-[#C4C4C4]">
                 #Treatment
               </p>
@@ -25,7 +24,6 @@ export default function AboutSection() {
                 Touch me
               </button>
             </div>
-          </div>
         </div>
       </div>
     </section>

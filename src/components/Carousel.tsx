@@ -39,7 +39,7 @@ export default function Carousel() {
           modules={[EffectFade, Pagination, Navigation, Autoplay]}
           effect="fade"
           className="sm:h-[calc(100vh-88px)] h-[calc(50vh-88px)] w-full"
-          autoplay={{ delay: 1000}}
+          autoplay={{ delay: 1000, stopOnLastSlide: false}}
         >
           {data.map((item) => (
             <SwiperSlide key={item.id}>

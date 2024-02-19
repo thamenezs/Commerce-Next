@@ -25,7 +25,7 @@ const ProductsSectionImages: React.FC<ProductsSectionImagesProps> = ({
         layout="reponsive"
         width={300}
         height={300}
-        className="bg-[#24CF9E]"
+        className="bg-[#24CF9E] w-full"
       />
       <div className="absolute bottom-0 left-0 w-full bg-opacity-55">
         <div className="flex flex-col gap-4 bg-[#262626] font-montserrat p-7">
@@ -44,7 +44,7 @@ interface ProductsSectionProps {
 const ProductsSectionData: React.FC<ProductsSectionProps> = ({ products }) => {
   return (
     <section className="container">
-      <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+      <div className="grid grid-cols-1 lg:grid-cols-2 gap-6">
         {products.map((product) => (
           <ProductsSectionImages
             key={product.title}

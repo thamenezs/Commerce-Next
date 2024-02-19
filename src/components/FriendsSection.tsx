@@ -1,6 +1,7 @@
 import { secureHeapUsed } from "crypto";
 import { useState } from "react";
 import Image from "next/image";
+import Masonry, { ResponsiveMasonry } from "react-responsive-masonry";
 
 export default function FeedbacksSection() {
   const [isHoverId, setIsHoverId] = useState(0);
@@ -59,32 +60,38 @@ export default function FeedbacksSection() {
       imageSrc:
         "https://images.pexels.com/photos/5938592/pexels-photo-5938592.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
       alt: "",
-    },{
+    },
+    {
       id: 10,
       imageSrc:
         "https://images.pexels.com/photos/5217926/pexels-photo-5217926.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
       alt: "",
-    },{
+    },
+    {
       id: 11,
       imageSrc:
         "https://images.pexels.com/photos/6663592/pexels-photo-6663592.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
       alt: "",
-    },{
+    },
+    {
       id: 12,
       imageSrc:
         "https://images.pexels.com/photos/7019474/pexels-photo-7019474.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
       alt: "",
-    },{
+    },
+    {
       id: 13,
       imageSrc:
         "https://images.pexels.com/photos/9253762/pexels-photo-9253762.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
       alt: "",
-    },{
+    },
+    {
       id: 14,
       imageSrc:
         "https://images.pexels.com/photos/15327096/pexels-photo-15327096/free-photo-of-retrato.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
       alt: "",
-    },{
+    },
+    {
       id: 15,
       imageSrc:
         "https://images.pexels.com/photos/7446693/pexels-photo-7446693.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
@@ -92,26 +99,36 @@ export default function FeedbacksSection() {
     },
   ];
   return (
-    <section className="w-full h-screen bg-white" id="friends">
-      <div className="font-montserrat font-semibold text-center text-4xl p-10">
+    <section className="w-full h-full bg-white" id="friends">
+      <div className="font-montserrat font-semibold text-center text-4xl my-8">
         My Beautiful Friends
       </div>
-      <div className="grid grid-cols-7 gap-2 w-full ml-[38px] mr-[36px]">
-        {feedbacksSectionData.map((data) => (
-          <div
-            key={data.alt}
-            onMouseEnter={() => setIsHoverId(data.id)}
-            className={isHoverId == data.id ? "" : "grayscale transition-all scale-95 duration-500"}
-          >
-            <Image
-              src={data.imageSrc}
-              alt={data.alt}
-              width={300}
-              height={100}
-              objectFit="cover"
-            />
-          </div>
-        ))}
+      <div className="p-6 lg:p-10">
+        <ResponsiveMasonry
+          columnsCountBreakPoints={{ 300: 3, 500: 3, 700: 4, 900: 5 }}
+        >
+          <Masonry columnsCount={7}>
+            {feedbacksSectionData.map((data) => (
+              <div
+                key={data.alt}
+                onMouseEnter={() => setIsHoverId(data.id)}
+                className={
+                  isHoverId == data.id
+                    ? ""
+                    : "grayscale transition-all scale-95 duration-500"
+                }
+              >
+                <Image
+                  src={data.imageSrc}
+                  alt={data.alt}
+                  width={300}
+                  height={100}
+                  objectFit="cover"
+                />
+              </div>
+            ))}
+          </Masonry>
+        </ResponsiveMasonry>
       </div>
     </section>
   );
