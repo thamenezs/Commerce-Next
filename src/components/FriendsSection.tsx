@@ -123,7 +123,6 @@ export default function FeedbacksSection() {
                   alt={data.alt}
                   width={300}
                   height={100}
-                  objectFit="cover"
                 />
               </div>
             ))}

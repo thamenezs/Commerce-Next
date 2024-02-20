@@ -4,7 +4,7 @@ import Link from "next/link";
 import { Bars3Icon, XMarkIcon } from "@heroicons/react/16/solid";
 
 const classNameLink =
-  "inline-block hover:underline underline-offset-8 decoration-2 decoration-sky-500";
+  "inline-block hover:underline underline-offset-8 decoration-2 decoration-[#1DCF9D]";
 function MenuOverlay() {
   return (
     <div className="absolute top-20 left-0 bg-white rounded-md shadow-md font-montserrat text-base ml-10 z-20 w-36 h-40 p-4">

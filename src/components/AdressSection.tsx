@@ -4,7 +4,7 @@ import Maps from "./Maps";
 export default function AdressSection() {
   return (
     <section id="adress">
-      <div className="w-full h-[700px] bg-slate-100 p-2 lg:p-16 mb-10 lg:mb-0">
+      <div className="w-full h-[700px] bg-slate-100 p-2 lg:p-16 mb-28 lg:mb-0">
         <div className="font-montserrat font-semibold text-center text-4xl my-8">
           Our Location
         </div>
