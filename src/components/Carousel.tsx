@@ -8,9 +8,10 @@ import "swiper/css/pagination";
 
 export default function Carousel() {
   const data = [
+    
     {
       id: "1",
-      image: "/hero.png",
+      image: "/jessica1.png",
     },
     {
       id: "2",
@@ -25,7 +26,7 @@ export default function Carousel() {
   ];
   return (
     <div className="container">
-      <div>
+      <div className="mt-10 md:mt-2">
         <Swiper
           slidesPerView={1}
           pagination={{

@@ -49,14 +49,14 @@ export default function Navbar() {
           {!openMenu ? (
             <button
               onClick={() => setOpenMenu(true)}
-              className="absolute top-10 left-0 px-3 py-2 text-slate-800 hover:bg-black"
+              className="absolute top-10 left-0 px-3 py-2 text-slate-800"
             >
               <Bars3Icon className="h-8 w-8"></Bars3Icon>
             </button>
           ) : (
             <button
               onClick={() => setOpenMenu(false)}
-              className="absolute top-10 left-0 px-3 py-2 text-slate-800 hover:bg-black"
+              className="absolute top-10 left-0 px-3 py-2 text-slate-800"
             >
               <XMarkIcon className="h-8 w-8"></XMarkIcon>
             </button>
