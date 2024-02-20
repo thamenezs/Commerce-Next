@@ -5,7 +5,7 @@ export default function AdressSection() {
   return (
     <section id="adress">
       <div className="w-full h-[700px] md:h-96 bg-slate-100 p-2 lg:p-16 mb-28">
-        <div className="font-montserrat font-semibold text-center text-4xl my-8">
+        <div className="font-montserrat font-semibold text-center text-4xl">
           Our Location
         </div>
         <div className="grid grid-cols-1 gap-16 md:grid-cols-2 place-items-stretch">
