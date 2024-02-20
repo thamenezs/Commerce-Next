@@ -8,24 +8,23 @@ import "swiper/css/pagination";
 
 export default function Carousel() {
   const data = [
-    
+
     {
       id: "1",
-      image: "/jessica1.png",
+      image: "/hero.png",
     },
     {
       id: "2",
       image:
-        "https://images.pexels.com/photos/406014/pexels-photo-406014.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+        "/woman4.png",
     },
     {
       id: "3",
       image:
-        "https://images.pexels.com/photos/2039606/pexels-photo-2039606.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+        "/woman6.png",
     },
   ];
   return (
-    <div className="container">
       <div className="mt-10 md:mt-2">
         <Swiper
           slidesPerView={1}
@@ -39,12 +38,13 @@ export default function Carousel() {
           }}
           modules={[EffectFade, Pagination, Navigation, Autoplay]}
           effect="fade"
+          fadeEffect={{crossFade: true}}
           className="sm:h-[calc(100vh-88px)] h-[calc(50vh-88px)] w-full"
           autoplay={{ delay: 1000, stopOnLastSlide: false}}
         >
           {data.map((item) => (
             <SwiperSlide key={item.id}>
-              <div className="flex h-full w-full items-center justify-center static">
+              <div className="flex h-full w-full items-center justify-center">
                 <Image
                   src={item.image}
                   alt={"photos"}
@@ -58,6 +58,5 @@ export default function Carousel() {
           <div className="swiper-button-prev"></div>
         </Swiper>
       </div>
-    </div>
   );
 }
