@@ -1,28 +1,31 @@
 import ProductsSectionData from "./ProductsSectionImages";
 import Image from "next/image";
 
-
 export default function ProductsSection() {
   const productData = [
     {
       imageSrc: "/hero.png",
-      title: "Eyelash extension",
-      subtitle: "Safe and comfortable eyelashes by using exclusive Japanese products and best application technique",
+      title: "Limpeza de Pele",
+      subtitle:
+        "Safe and comfortable eyelashes by using exclusive Japanese products and best application technique",
     },
     {
       imageSrc: "/hero.png",
-      title: "Tatoo Removal",
-      subtitle: "Safe and comfortable eyelashes by using exclusive Japanese products and best application technique",
+      title: "Massagem Modeladora",
+      subtitle:
+        "Safe and comfortable eyelashes by using exclusive Japanese products and best application technique",
     },
     {
       imageSrc: "/hero.png",
-      title: "Get Nail Art",
-      subtitle: "Safe and comfortable eyelashes by using exclusive Japanese products and best application technique",
+      title: "Ventosaterapia",
+      subtitle:
+        "Safe and comfortable eyelashes by using exclusive Japanese products and best application technique",
     },
     {
       imageSrc: "/hero.png",
-      title: "Permanent Makeup",
-      subtitle: "Safe and comfortable eyelashes by using exclusive Japanese products and best application technique",
+      title: "Botox",
+      subtitle:
+        "Safe and comfortable eyelashes by using exclusive Japanese products and best application technique",
     },
   ];
   return (
@@ -38,19 +41,19 @@ export default function ProductsSection() {
             quality={100}
           />
           <h1 className="tracking-normal text-4xl lg:text-6xl font-bold text-black font-montserrat lg:text-left">
-            Where We Start And Here We Are
+            Quem Somos E O Que Fazemos
           </h1>
           <h2 className="text-xl font-light font-montserrat text-justify">
-            Starting from 2006 and starting with a concern I wanted to look good
-            to support my confidence but at that time there was no eyelash salon
-            in Bali, then I studied in Japan and practiced it with friends and
-            gradually I got recognition from relatives and friends. my
-            environment so that in 2012 I decided to open my first studio and
-            has grown to date opening 4 services as follows
+            A partir de 2006 surge uma preocupação que eu queria ter uma boa
+            aparência para apoiar minha confiança, mas naquela época não havia
+            um estúdio acessível, então estudei sobre e comecei o curso de
+            Esteticista. Em 2017 resolvi abrir meu primeiro estúdio que cresceu
+            muito e hoje já conquistei meu próprio espaço para atender melhor as
+            pessoas. Cheque alguns dos serviços ofertados no estúdio
           </h2>
         </div>
         <div className="ml-5 mr-5 mt-5">
-          <ProductsSectionData products={productData}/>
+          <ProductsSectionData products={productData} />
         </div>
       </div>
     </section>

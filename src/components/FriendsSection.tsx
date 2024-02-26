@@ -101,7 +101,7 @@ export default function FeedbacksSection() {
   return (
     <section className="w-full h-full bg-white" id="friends">
       <div className="font-montserrat font-semibold text-center text-4xl my-8">
-        My Beautiful Friends
+        Queridos Clientes
       </div>
       <div className="p-6 lg:p-10">
         <ResponsiveMasonry

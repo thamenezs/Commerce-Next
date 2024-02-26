@@ -11,17 +11,17 @@ export default function Carousel() {
 
     {
       id: "1",
-      image: "/hero.png",
+      image: "/jessica1.png",
     },
     {
       id: "2",
       image:
-        "/woman4.png",
+        "/jessicagf.png",
     },
     {
       id: "3",
       image:
-        "/woman6.png",
+        "/jessicass.png",
     },
   ];
   return (
@@ -54,8 +54,7 @@ export default function Carousel() {
               </div>
             </SwiperSlide>
           ))}
-          <div className="swiper-button-next"></div>
-          <div className="swiper-button-prev"></div>
+
         </Swiper>
       </div>
   );

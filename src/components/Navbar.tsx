@@ -85,19 +85,19 @@ export default function Navbar() {
         <div className="hidden lg:block">
           <div className="flex flex-row gap-5">
             <Link href={"/"} className={classNameLink}>
-              Home
+              Início
             </Link>
             <Link href={"#products"} className={classNameLink}>
-              Products
+              Serviços
             </Link>
             <Link href={"#friends"} className={classNameLink}>
-              Clients
+              Clientes
             </Link>
             <Link href={"#adress"} className={classNameLink}>
-              Adress
+              Endereço
             </Link>
             <Link href={"#contact"} className={classNameLink}>
-              Contact Us
+              Contate-nos
             </Link>
           </div>
         </div>
