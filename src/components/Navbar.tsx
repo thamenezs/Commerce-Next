@@ -4,34 +4,34 @@ import Link from "next/link";
 import { Bars3Icon, XMarkIcon } from "@heroicons/react/16/solid";
 
 const classNameLink =
-  "inline-block hover:underline underline-offset-8 decoration-2 decoration-[#1DCF9D]";
+  "inline-block hover:underline underline-offset-8 decoration-2 decoration-[#CE9F95]";
 function MenuOverlay() {
   return (
     <div className="absolute top-20 left-0 bg-white rounded-md shadow-md font-montserrat text-base ml-10 z-20 w-36 h-40 p-4">
       <ul>
         <li>
           <Link href={"/"} className={classNameLink}>
-            Home
+            Início
           </Link>
         </li>
         <li>
           <Link href={"#products"} className={classNameLink}>
-            Products
+            Sobre mim
           </Link>
         </li>
         <li>
           <Link href={"#friends"} className={classNameLink}>
-            Clients
+            Clientes
           </Link>
         </li>
         <li>
           <Link href={"#adress"} className={classNameLink}>
-            Adress
+            Endereço
           </Link>
         </li>
         <li>
           <Link href={"#contact"} className={classNameLink}>
-            Contact Us
+            Siga-nos
           </Link>
         </li>
       </ul>
@@ -88,7 +88,7 @@ export default function Navbar() {
               Início
             </Link>
             <Link href={"#products"} className={classNameLink}>
-              Serviços
+              Sobre mim
             </Link>
             <Link href={"#friends"} className={classNameLink}>
               Clientes

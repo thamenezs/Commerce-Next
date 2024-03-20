@@ -40,15 +40,16 @@ export default function ProductsSection() {
             className="mb-6 ml-6"
             quality={100}
           />
-          <h1 className="tracking-normal text-4xl lg:text-6xl font-bold text-black font-montserrat lg:text-left">
+          <h1 className="tracking-normal text-4xl lg:text-6xl font-bold text-[#CE9F95] font-montserrat lg:text-left">
             Quem Sou Eu E O Que Faço
           </h1>
           <h2 className="text-xl font-light font-montserrat text-justify">
-            Sou a Jessica Gomes! Tenho 32 anos, sou casada e sou empreendedora
-            desde 2020. Sou graduada em Estética e Cosmetologia pela FACEMG com
-            pós graduaçao em Estética Injetáveis. Sou comprometida em ajudar
-            pessoas a encontrarem sua melhor versão por meio de cuidados
-            estéticos! Conheça mais do que fazemos no nosso estúdio
+            Sou a Jessica Gomes, 32 anos, casada e dona do Estúdio Jessica Gomes
+            Estética Avançada! Sou empreendedora há 4 anos, graduada em Estética
+            e Cosmetologia pela FACEMG e pós graduaçao em Estética Injetáveis.
+            Sou comprometida em ajudar pessoas a encontrarem sua melhor versão
+            por meio de cuidados estéticos! Conheça alguns dos procedimentos que
+            realizamos aqui no estúdio
           </h2>
         </div>
         <div className="ml-5 mr-5 mt-5">

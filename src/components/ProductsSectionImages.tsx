@@ -30,7 +30,7 @@ const ProductsSectionImages: React.FC<ProductsSectionImagesProps> = ({
         className="w-full"
       />
       <div className="absolute bottom-0 left-0 w-full bg-opacity-55">
-        <div className="flex flex-col gap-4 bg-[#262626] font-montserrat p-7">
+        <div className="flex flex-col gap-4 bg-[#71706E] font-montserrat p-7">
           <h3 className="text-lg font-semibold text-white">{title}</h3>
           {isHover ? (
             <XMarkIcon

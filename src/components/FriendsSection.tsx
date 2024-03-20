@@ -101,7 +101,7 @@ export default function FeedbacksSection() {
   return (
     <section className="w-full h-full bg-white" id="friends">
       <div className="font-montserrat font-semibold text-center text-4xl my-8">
-        Queridos Clientes
+        Queridas Clientes,
       </div>
       <div className="p-6 lg:p-10">
         <ResponsiveMasonry
@@ -128,6 +128,9 @@ export default function FeedbacksSection() {
             ))}
           </Masonry>
         </ResponsiveMasonry>
+      </div>
+      <div className="font-montserrat font-semibold text-center text-4xl my-8">
+        Venha fazer parte dessa história!
       </div>
     </section>
   );

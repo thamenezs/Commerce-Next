@@ -15,13 +15,13 @@ export default function AboutSection() {
             </p>
             <div className="flex flex-row">
               <h1 className="tracking-wide text-4xl sm:text-6xl font-bold text-black">
-                Torne-se ainda <span className="text-[#1DCF9D]"> melhor hoje</span> 
+                Torne-se ainda <span className="text-[#CE9F95]"> melhor hoje</span> 
               </h1>
             </div>
             <span className="text-lg font-montserrat text-black">
             Consulte-nos para conhecer os serviçoes que atendem às suas necessidades
             </span>
-            <button className="text-lg bg-[#262626] text-white px-[28px] py-[16px] hover:bg-slate-700">
+            <button className="text-lg bg-[#F8DCD1] text-gray px-[28px] py-[16px] hover:bg-[#c7b0a7]">
               <Link
                 href={
                   "https://api.whatsapp.com/send?phone=553175077925&text=Ol%C3%A1,%20gostaria%20de%20saber%20mais%20sobre%20os%20servi%C3%A7os%20de%20est%C3%A9tica%20avan%C3%A7ada%20:)"
