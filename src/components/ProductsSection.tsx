@@ -4,26 +4,26 @@ import Image from "next/image";
 export default function ProductsSection() {
   const productData = [
     {
-      imageSrc: "/hero.png",
-      title: "Limpeza de Pele",
+      imageSrc: "/microlips.png",
+      title: "Microlips",
       subtitle:
         "Safe and comfortable eyelashes by using exclusive Japanese products and best application technique",
     },
     {
-      imageSrc: "/hero.png",
-      title: "Massagem Modeladora",
+      imageSrc: "/liporeduz.png",
+      title: "Lipo Reduz",
       subtitle:
         "Safe and comfortable eyelashes by using exclusive Japanese products and best application technique",
     },
     {
-      imageSrc: "/hero.png",
-      title: "Ventosaterapia",
+      imageSrc: "/celuliteoff.png",
+      title: "Celulite Off",
       subtitle:
         "Safe and comfortable eyelashes by using exclusive Japanese products and best application technique",
     },
     {
-      imageSrc: "/hero.png",
-      title: "Botox",
+      imageSrc: "/enzimas.png",
+      title: "Enzimas",
       subtitle:
         "Safe and comfortable eyelashes by using exclusive Japanese products and best application technique",
     },
@@ -41,15 +41,14 @@ export default function ProductsSection() {
             quality={100}
           />
           <h1 className="tracking-normal text-4xl lg:text-6xl font-bold text-black font-montserrat lg:text-left">
-            Quem Somos E O Que Fazemos
+            Quem Sou Eu E O Que Faço
           </h1>
           <h2 className="text-xl font-light font-montserrat text-justify">
-            A partir de 2006 surge uma preocupação que eu queria ter uma boa
-            aparência para apoiar minha confiança, mas naquela época não havia
-            um estúdio acessível, então estudei sobre e comecei o curso de
-            Esteticista. Em 2017 resolvi abrir meu primeiro estúdio que cresceu
-            muito e hoje já conquistei meu próprio espaço para atender melhor as
-            pessoas. Cheque alguns dos serviços ofertados no estúdio
+            Sou a Jessica Gomes! Tenho 32 anos, sou casada e sou empreendedora
+            desde 2020. Sou graduada em Estética e Cosmetologia pela FACEMG com
+            pós graduaçao em Estética Injetáveis. Sou comprometida em ajudar
+            pessoas a encontrarem sua melhor versão por meio de cuidados
+            estéticos! Conheça mais do que fazemos no nosso estúdio
           </h2>
         </div>
         <div className="ml-5 mr-5 mt-5">

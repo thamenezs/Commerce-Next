@@ -28,7 +28,7 @@ export default function AboutSection() {
                 }
               target="_blank"
               >
-                Saiba mais
+                Quero Marcar!
               </Link>
             </button>
           </div>

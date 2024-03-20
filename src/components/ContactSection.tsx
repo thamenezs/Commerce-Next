@@ -20,7 +20,7 @@ export default function ContactSection() {
           </div>
           <div className="hidden md:block">
             <h1 className="font-semibold text-xl mb-4">Contatos</h1>
-            <p className="font-light text-lg">+55 (31) 998053629</p>
+            <p className="font-light text-lg">+55 (31) 97507-7925</p>
           </div>
           <div className="col-span-4 place-self-center md:place-self-start md:col-span-1 ">
             <h1 className="font-semibold text-3xl lg:text-xl">Follow Us</h1>
