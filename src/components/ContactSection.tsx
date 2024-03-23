@@ -4,7 +4,7 @@ import Image from "next/image";
 export default function ContactSection() {
   return (
     <section id="contact">
-      <div className="bg-[#1DCF9D] w-full p-10">
+      <div className="bg-[#CE9F95] w-full p-10">
         <div className="grid grid-cols-4 font-montserrat gap-10">
           <div className="hidden md:block">
             <h1 className="font-semibold text-xl mb-4">Estética Avançada</h1>

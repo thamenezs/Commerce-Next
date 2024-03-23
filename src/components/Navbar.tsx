@@ -65,16 +65,16 @@ export default function Navbar() {
         <div className="flex">
           <Link href={"/"}>
             <Image
-              src="/nice.png"
+              src="/jessicagomes1.png"
               alt="Logo do estudio"
-              width={60}
-              height={60}
+              width={95}
+              height={95}
               className="hidden lg:block"
             />
           </Link>
           <Link href={"/"}>
             <Image
-              src="/logo-color 1.png"
+              src="/logomaior1.png"
               alt="Logo do estudio"
               width={150}
               height={150}

@@ -10,61 +10,61 @@ export default function FeedbacksSection() {
     {
       id: 1,
       imageSrc:
-        "https://images.pexels.com/photos/7176305/pexels-photo-7176305.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+        "/friend1.jpg",
       alt: "",
     },
     {
       id: 2,
       imageSrc:
-        "https://images.pexels.com/photos/5069609/pexels-photo-5069609.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+        "/friend2.jpg",
       alt: "",
     },
     {
       id: 3,
       imageSrc:
-        "https://images.pexels.com/photos/5240677/pexels-photo-5240677.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+        "/friend10.jpg",
       alt: "",
     },
     {
       id: 4,
       imageSrc:
-        "https://images.pexels.com/photos/7582560/pexels-photo-7582560.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+        "/friend4.jpg",
       alt: "",
     },
     {
       id: 5,
       imageSrc:
-        "https://images.pexels.com/photos/5473182/pexels-photo-5473182.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+        "/friend5.jpg",
       alt: "",
     },
     {
       id: 6,
       imageSrc:
-        "https://images.pexels.com/photos/6560282/pexels-photo-6560282.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+        "/friend6.jpg",
       alt: "",
     },
     {
       id: 7,
       imageSrc:
-        "https://images.pexels.com/photos/5793890/pexels-photo-5793890.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+        "/friend7.jpg",
       alt: "",
     },
     {
       id: 8,
       imageSrc:
-        "https://images.pexels.com/photos/7479983/pexels-photo-7479983.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+        "/friend8.jpg",
       alt: "",
     },
     {
       id: 9,
       imageSrc:
-        "https://images.pexels.com/photos/5938592/pexels-photo-5938592.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+        "/friend9.jpg",
       alt: "",
     },
     {
       id: 10,
       imageSrc:
-        "https://images.pexels.com/photos/5217926/pexels-photo-5217926.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+        "/friend3.jpg",
       alt: "",
     },
     {
@@ -101,7 +101,7 @@ export default function FeedbacksSection() {
   return (
     <section className="w-full h-full bg-white" id="friends">
       <div className="font-montserrat font-semibold text-center text-4xl my-8">
-        Queridas Clientes,
+        Família Estúdio Jessica Gomes
       </div>
       <div className="p-6 lg:p-10">
         <ResponsiveMasonry

@@ -4,8 +4,8 @@ import Maps from "./Maps";
 export default function AdressSection() {
   return (
     <section id="adress">
-      <div className="w-full h-screen md:h-96 bg-[#D8D8D8] p-2 lg:px-16">
-        <div className="font-montserrat font-semibold text-center text-4xl mb-4">
+      <div className="w-full h-full bg-[#D8D8D8] py-4">
+        <div className="font-montserrat font-semibold text-center text-4xl mb-4 text-[#CE9F95]">
           Onde Estamos
         </div>
         <div className="grid grid-cols-1 gap-16 md:grid-cols-2 place-items-stretch">

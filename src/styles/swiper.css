@@ -3,7 +3,7 @@
 @import 'swiper/css/navigation';
 
 .swiper-pagination-bullet-active{
-    background: #71706E !important;
+    background: #F8DCD1 !important;
     height: 8px ;
     width: 48px !important;
   }
